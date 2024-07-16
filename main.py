@@ -1,5 +1,6 @@
 import os
 import time
+from logo import art
 import json
 
 command = "cls"
@@ -13,7 +14,8 @@ data = json.loads(lines)
 
 def menu():
     os.system(command)
-    option = int(input("What would you like to do?\n===============================\n[1] View a To Do List\n[2] Edit one of your To Do Lists\n[3] Create / Delete a To Do List\n===============================\n-> "))
+    print(f"{art}\n")
+    option = int(input("================================\nWhat would you like to do?\n================================\n[1] View a To Do List\n[2] Edit one of your To Do Lists\n[3] Create / Delete a To Do List\n================================\n-> "))
     if option == 1:
         view()
 
